@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "y-check-icon": "/components/y-check-icon/y-check-icon"
+  }
+}

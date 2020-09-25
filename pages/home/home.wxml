@@ -1,0 +1,22 @@
+<!--pages/home/home.wxml-->
+<!--1.展示轮播图-->
+<y-swiper list="{{banners}}"/>
+
+<!--2.推荐数据展示-->
+<y-recommend recommends="{{recommends}}" bind:imageload="handleImageLoad"/>
+
+<!--3.展示本周流行-->
+<y-popular/>
+
+<!--4.tab-control-->
+<y-tab-control titles="{{titles}}"
+               bind:itemClick="handleTabClick"
+               id="tab-control"
+               class="{{isTabFixed ? 'fixed' : ''}}"/>
+<y-tab-control titles="{{titles}}" wx:if="{{isTabFixed}}"/>
+
+<!--5.展示商品数据-->
+<y-goods goods="{{goods[currentType].list}}"/>
+
+<!--6.回到顶部-->
+<y-back-top wx:if="{{showBackTop}}"/>
