@@ -1,6 +1,6 @@
 # wx-mini-program-shop
 
-+基于微信原生小程序的商城项目
++ 基于微信原生小程序的商城项目
 
 ![demo](https://s1.ax1x.com/2020/09/25/09Xx8P.png)
 
